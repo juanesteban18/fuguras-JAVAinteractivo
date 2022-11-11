@@ -1,0 +1,165 @@
+.contenedor{
+    width: 70%;
+    min-height: 400px;
+    margin: 50px auto;
+    display: flex;
+    border: 4px solid rgb(0, 0, 0);
+}
+
+
+.contenedor .Derecha{
+    background:  rgb(110, 108, 109);
+    width: 50%;
+    text-align: center;
+}
+
+.contenedor .Izquierda{
+    background: rgb(187, 187, 187);
+    width: 50%;
+    text-align: center;
+}
+.Derecha h2{
+color: rgb(255, 255, 255);
+}
+
+.Izquierda h2{
+    color: rgb(158, 0, 163);
+}
+
+.Derecha #figura{
+    width: 180px;
+    height: 180px;
+    margin: 30px auto;
+    background: rgb(255, 255, 255);
+    transition: 1s;
+}
+
+.Izquierda button{
+    border: 2px solid   rgb(0, 0, 0);
+    background: rgb(248, 248, 248);
+    color: rgb(124, 11, 161);
+    padding: 8px 24px;
+    font-size: 20px;
+    margin: 10px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.Izquierda button:hover{
+    border-radius: 15px 0 15px 0;
+    background: plum;
+    color: rgb(0, 0, 0);
+}
+
+#figura.Circulo{
+    border-radius: 50%;
+    transform: rotate(360deg);
+    transition: 1S;
+    background: greenyellow;
+}
+
+#figura.Rombo{
+border-style: 20%;
+    transform: rotate(315deg);
+    transition: 1s;
+    background: #ffffff;
+    border: 4px solid #000000;
+    
+}
+
+#figura.Triangulo{
+    width: 0px;
+        height: 0px;
+        border-right: 100px solid rgb(110, 108, 109);
+        border-top: 100px solid rgb(110, 108, 109);
+        border-left: 100px solid rgb(110, 108, 109);
+        border-bottom: 150px solid #ffffff;
+    
+        transition: 2s;
+}
+
+#figura.top {
+    transform: translateY(-100px);
+    transition: 1s;
+    background: #ffffff;
+    border: 4px solid #000000;
+}
+
+#figura.Left {
+    transform: translateX(-100px);
+    transition: 1s;
+    background: #ffffff;
+    border: 4px solid #000000;
+}
+
+#figura.Butom {
+    transform: translateY(100px);
+    transition: 1s;
+    background: #ffffff;
+    border: 4px solid #000000;
+}
+
+#figura.Right {
+    transform: translateX(100px);
+    transition: 1s;
+    background: #ffffff;
+    border: 4px solid #000000;
+}
+#figura.DiagonalIz {
+
+    transform: translate(-100px, -100px);
+    transition: 1s;
+    background: #ffffff;
+    border: 4px solid #000000;
+}
+
+#figura.DiagonalDe {
+    transform: translate(100px, 100px);
+    transition: 1s;
+    background: #ffffff;
+    border: 4px solid #000000;
+}
+
+#figura.gif{
+    background: url(../img/gato.gif);
+    background-size: cover;
+}
+
+#figura.ovalo{
+    transform: translate(100px, 100px);
+    transition: 1s;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    shape-outside: ellipse(20% 50%);
+    clip-path: ellipse(20% 50%);
+    background: rgb(251, 254, 255);
+  }
+
+  #figura.T{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 0 20px;
+    shape-outside: polygon(
+      0 0,
+      100% 0,
+      100% 20%,
+      60% 20%,
+      60% 100%,
+      40% 100%,
+      40% 20%,
+      0 20%
+    );
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 20%,
+      60% 20%,
+      60% 100%,
+      40% 100%,
+      40% 20%,
+      0 20%
+    );
+    background: rgb(254, 255, 255);
+  }
